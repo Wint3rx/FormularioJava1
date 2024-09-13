@@ -20,7 +20,7 @@ public class ProductoService {
 
     // Método para obtener un producto por su ID
     public Producto obtenerProductoPorId() throws SQLException {
-        return productoDAO.getProductoById(id);
+        return productoDAO.getProductoById(obtenerProductoPorId().getIdProducto());
     }
 
     // Método para agregar un nuevo producto
